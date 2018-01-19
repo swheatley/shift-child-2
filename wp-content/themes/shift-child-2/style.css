@@ -1,4 +1,4 @@
-            /* 
+                        /* 
 Theme Name:		 Shift Child
 Theme URI:		 http://childtheme-generator.com/
 Description:	 Shift Child is a child theme of Shift, created by ChildTheme-Generator.com
@@ -8,159 +8,144 @@ Template:		 shift
 Version:		 1.0.0
 Text Domain:	 shift-child
 */
-            /*
-    Add your custom styles here
-*/
-            /* 
-      ------------------------------
-           Header 
-      ------------------------------  
-    */
+                    /*  Add your custom styles here  */
+                    /*------------------------------ Sidebar / Widget CSS ------------------------------ */
 
-            div#menu-primary-container {
-                background: #1A1A1A;
-            }
-
-            .menu-primary a {
-                color: #fff;
-                font-weight: 700;
-                letter-spacing: 0.1em;
-            }
-
-            .page_item>a:link {
-                color: white;
-                text-decoration: none;
-            }
-
-            .page_item>a {
-                color: white;
-            }
-
-            .social-media-icons>li>a:link {
-                color: white;
-            }
-            /* 
+                    @media (min-width: 56.25em) {
+                        .sidebar-affiliate,
+                        .sidebar-political {
+                            width: 30.547%;
+                            float: right;
+                            margin: 1.5em 2.777% 3em 0;
+                        }
+                        .sidebar-primary #text-2 > .widget-title,
+                        .sidebar-affiliate .widget-title {
+                            display: none;
+                        }
+                        /*------------------------------ Menu Bar ------------------------------ */
+                        .toggle-dropdown {
+                            color: #fff;
+                        }
+                        .sub-menu li a {
+                            color: #000;
+                        }
+                        /*   --------------- Header--------------------------- */
+                        div#menu-primary-container {
+                            background: #1A1A1A;
+                        }
+                        .menu-primary a {
+                            color: #fff;
+                            font-weight: 700;
+                            letter-spacing: 0.1em;
+                        }
+                        .page_item>a:link {
+                            color: white;
+                            text-decoration: none;
+                        }
+                        .page_item>a {
+                            color: white;
+                        }
+                        .social-media-icons>li>a:link {
+                            color: white;
+                        }
+                        /* 
       ------------------------------
            Web Portfolio Page 
       ------------------------------  
     */
-
-            ul#menu-web-portfolio-menu {
-                display: flex;
-                justify-content: space-around;
-                list-style-type: none;
-                width: 500px;
-                flex-wrap: wrap;
-                text-align: center;
-            }
-
-            @media screen and ( max-width: 600px) {
-                ul#menu-web-portfolio-menu {
-                    flex-direction: column;
-                    max-width: 100%;
-                    padding: 2em;
-                    margin: auto;
-                }
-                #menu-web-portfolio-menu>li.menu-item {
-                    margin: 1em;
-                }
-            }
-
-            @media screen and ( min-width: 900px) {
-                ul#menu-web-portfolio-menu {
-                    position: relative;
-                    bottom: 5em;
-                    left: 15em;
-                }
-            }
-
-            @media screen and ( min-width: 1220px) {
-                ul#menu-web-portfolio-menu {
-                    left: 30em;
-                }
-            }
-
-            #menu-item-1640 {
-                padding: 1em;
-                background: #ed549e
-            }
-
-            #menu-item-1641 {
-                background: #2084c7;
-                padding: 1em;
-            }
-
-            #menu-item-1642 {
-                background: #ffcc35;
-                padding: 1em;
-            }
-
-            #menu-item-1640 a,
-            #menu-item-1641 a,
-            #menu-item-1642 a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            .su-heading-inner {
-                text-decoration: none;
-            }
-
-            #high-fitness-portfolio .su-tabs-nav span.su-tabs-current {
-                background: #ffcc35 !important;
-                color: #fff !important;
-            }
-
-            #high-fitness-portfolio .su-tabs-nav span {
-                background: #ed549e !important;
-                color: #fff !important;
-            }
-
-            #northstarlds-portfolio .su-tabs-nav span {
-                background: #004b81 !important;
-                color: #fff !important;
-            }
-
-            #northstarlds-portfolio .su-tabs-nav span.su-tabs-current {
-                background: #2084c7 !important;
-                color: #fff !important;
-            }
-
-            @media screen and ( max-width: 767px) {
-                .su-carousel {
-                    display: none;
-                }
-            }
-
-            .form-header {
-                display: flex;
-                justify-content: space-between;
-            }
-
-           
-            /* 
-      ------------------------------
-          Candidate Website Package Page 
-      ------------------------------  
-    */
-
-            #loop-container>div>article>div.post-content>div:nth-child(1)>div.su-box-content.su-clearfix {
-                background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/candidate-basic-package.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            #loop-container>div>article>div.post-content>div.su-box.su-box-style-soft>div.su-box-content.su-clearfix {
-                background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/starter-candidate-package.jpg);
-                background-position: right;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            #loop-container>div>article>div.post-content>div:nth-child(5)>div.su-box-content.su-clearfix {
-                background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/candidate-the-works-package.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+                        ul#menu-web-portfolio-menu {
+                            display: flex;
+                            justify-content: space-around;
+                            list-style-type: none;
+                            width: 500px;
+                            flex-wrap: wrap;
+                            text-align: center;
+                        }
+                        @media screen and ( max-width: 600px) {
+                            ul#menu-web-portfolio-menu {
+                                flex-direction: column;
+                                max-width: 100%;
+                                padding: 2em;
+                                margin: auto;
+                            }
+                            #menu-web-portfolio-menu>li.menu-item {
+                                margin: 1em;
+                            }
+                        }
+                        @media screen and ( min-width: 900px) {
+                            ul#menu-web-portfolio-menu {
+                                position: relative;
+                                bottom: 5em;
+                                left: 15em;
+                            }
+                        }
+                        @media screen and ( min-width: 1220px) {
+                            ul#menu-web-portfolio-menu {
+                                left: 30em;
+                            }
+                        }
+                        #menu-item-1640 {
+                            padding: 1em;
+                            background: #ed549e
+                        }
+                        #menu-item-1641 {
+                            background: #2084c7;
+                            padding: 1em;
+                        }
+                        #menu-item-1642 {
+                            background: #ffcc35;
+                            padding: 1em;
+                        }
+                        #menu-item-1640 a,
+                        #menu-item-1641 a,
+                        #menu-item-1642 a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        .su-heading-inner {
+                            text-decoration: none;
+                        }
+                        #high-fitness-portfolio .su-tabs-nav span.su-tabs-current {
+                            background: #ffcc35 !important;
+                            color: #fff !important;
+                        }
+                        #high-fitness-portfolio .su-tabs-nav span {
+                            background: #ed549e !important;
+                            color: #fff !important;
+                        }
+                        #northstarlds-portfolio .su-tabs-nav span {
+                            background: #004b81 !important;
+                            color: #fff !important;
+                        }
+                        #northstarlds-portfolio .su-tabs-nav span.su-tabs-current {
+                            background: #2084c7 !important;
+                            color: #fff !important;
+                        }
+                        @media screen and ( max-width: 767px) {
+                            .su-carousel {
+                                display: none;
+                            }
+                        }
+                        .form-header {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        /* ------------------------------ Candidate Website Package Page ------------------------------   */
+                        #loop-container>div>article>div.post-content>div:nth-child(1)>div.su-box-content.su-clearfix {
+                            background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/candidate-basic-package.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        #loop-container>div>article>div.post-content>div.su-box.su-box-style-soft>div.su-box-content.su-clearfix {
+                            background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/starter-candidate-package.jpg);
+                            background-position: right;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        #loop-container>div>article>div.post-content>div:nth-child(5)>div.su-box-content.su-clearfix {
+                            background: url(https://www.shaylee-hansen.local/wp-content/uploads/2018/01/candidate-the-works-package.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }

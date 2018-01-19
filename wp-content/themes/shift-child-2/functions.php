@@ -19,7 +19,7 @@ if ( ! function_exists( ( 'child_theme_widgets' ) ) ) {
 		) );
 		    register_sidebar( array(
 			'name'          => esc_html__( 'Politics Sidebar', 'shift' ),
-			'id'            => 'Politics',
+			'id'            => 'politics',
 			'description'   => esc_html__( 'Widgets in this area will be shown in the sidebar next to the main post content', 'shift' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
