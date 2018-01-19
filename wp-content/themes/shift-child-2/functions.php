@@ -6,10 +6,8 @@
 	
 		   
 /* Register Widgets */		   
-
-
-	if ( ! function_exists( ( 'ct_shift_register_widget_areas' ) ) ) {
-	function ct_shift_child_register_widget_areas() {
+if ( ! function_exists( ( 'child_theme_widgets' ) ) ) {
+	function child_theme_widgets() {
         	register_sidebar( array(
 			'name'          => esc_html__( 'Affiliate Sidebar', 'shift' ),
 			'id'            => 'affiliate',
@@ -19,26 +17,30 @@
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>'
 		) );
+		    register_sidebar( array(
+			'name'          => esc_html__( 'Politics Sidebar', 'shift' ),
+			'id'            => 'Politics',
+			'description'   => esc_html__( 'Widgets in this area will be shown in the sidebar next to the main post content', 'shift' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>'
+		) );
 	
 	}
 }
-add_action( 'widgets_init', 'ct_shift_child_register_widget_areas' );
+
+add_action( 'widgets_init', 'child_theme_widgets' );
 
 
 /* Register Menu  */
 
-if ( ! function_exists( ( 'ct_shift_theme_setup' ) ) ) {
-	function ct_shift_theme_setup() {
 
-		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'shift' )
-		) );
+	function child_theme_menus() {
 			register_nav_menus( array(
 			'footer' => esc_html__( 'Footer', 'shift' )
 		) );
 
-		load_theme_textdomain( 'shift', get_template_directory() . '/languages' );
 	}
-}
-add_action( 'after_setup_theme', 'ct_shift_theme_setup', 10 );
- ?>
+
+add_action( 'after_setup_theme', 'child_theme_menus', 10 );
