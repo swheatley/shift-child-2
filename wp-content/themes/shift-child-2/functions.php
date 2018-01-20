@@ -3,7 +3,11 @@
 	 function shift_child_enqueue_styles() {
  		  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
 		   } 
-	
+
+	function shift_child_scripts(){	   
+	  wp_register_script( 'child-javascript', get_template_directory_uri() . '/js/child-javascript.js', array( 'jquery' ), 1.1, true );
+	}
+	add_action('wp_enqueue_scripts', 'shift_child_scripts');
 		   
 /* Register Widgets */		   
 if ( ! function_exists( ( 'child_theme_widgets' ) ) ) {
