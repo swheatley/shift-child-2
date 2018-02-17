@@ -18,16 +18,16 @@ get_header(); ?>
 					</div>
 					<?php ct_shift_featured_image(); ?>
 					<div class="post-content">
-						<?php the_content(); ?>	
+						<?php the_content(); ?>
 							<?php wp_link_pages( array(
 							'before' => '<p class="singular-pagination">' . __( 'Pages:', 'shift' ),
 							'after'  => '</p>',
 						) ); ?>
-						<?php do_action( 'ct_shift_page_after' ); ?>			
+						<?php do_action( 'ct_shift_page_after' ); ?>
 					</div>
-				</article>	
-					
-			</div>		
+				</article>
+
+			</div>
 		<?php endwhile;
 	endif; ?>
 </div>

@@ -6,31 +6,30 @@
 get_header(); ?>
 
 	<div id="loop-container-political" class="loop-container-political">
-
-	
-		<?php the_content(); ?>
-
 		<div class="post-content-political">
 			<div class="political-header">
 				<figure>
-					<img src="https://www.shaylee-hansen.local/wp-content/uploads/2018/01/america-2025465_1280-compressor.png">
+					<img src="https://www.shayleehansen.com/wp-content/uploads/2018/01/america-2025465_1280-compressor.png">
 				</figure>
 				<h2>Website Packages</h2>
 			</div>
 
 			<div class="candidate-packages">
 				<div class="package-one">
-					<div class="header-box">
-						<h2>"First Timer" Package:
-							<span> $500</span>
-						</h2>
+					<div class="header-box header-box-one">
+						<h2>"First Timer" Package</h2>
 					</div>
+					<h3 class="package-price">$500</h3>
 					<figure>
-						<img src="https://www.shaylee-hansen.local/wp-content/uploads/2018/01/delicate-arch-896885_640.jpg">
+						<img src="https://www.shayleehansen.com/wp-content/uploads/2018/01/delicate-arch-sunset.jpg">
 					</figure>
-					<button class="info-button">Click Here</button>
-					<ul class="site-setup">
+					<button class="info-button button-package-one">Click Here</button>
+					<ul class="site-setup site-setup-one">
 						<br>
+						<h4>1st Time Female + LGBTQ + Minority Candidates</h4>
+						<br>
+						<h4>Price: $500</h4>
+					    <br>
 						<h4>Site Setup</h4>
 						<br>
 						<li>Domain Name ( annual )</li>
@@ -74,16 +73,17 @@ get_header(); ?>
 
 				</div>
 				<div class="package-two">
-					<div class="header-box">
-						<h2>"Basic" Package:
-							<span> $1500.00</span>
-						</h2>
+					<div class="header-box header-box-two">
+						<h2>"Basic" Package</h2>
 					</div>
+					<h3 class="package-price">$1500.00</h3>
 					<figure>
-						<img src="https://www.shaylee-hansen.local/wp-content/uploads/2018/01/salt-lake-city-1762659_640.jpg">
+						<img src="https://www.shayleehansen.com/wp-content/uploads/2018/01/utah-state-capital.jpg">
 					</figure>
-					<button class="info-button">Click Here</button>
-					<ul class="site-setup">
+					<button class="info-button button-package-two">Click Here</button>
+					<ul class="site-setup site-setup-two">
+						<br>
+						<h4>Price: $1500</h4>
 						<br>
 						<h4>Site Setup</h4>
 						<br>
@@ -130,16 +130,17 @@ get_header(); ?>
 				</div>
 
 				<div class="package-three">
-					<div class="header-box">
-						<h2>"The Works” Package:
-							<span> $3000.00</span>
-						</h2>
+					<div class="header-box header-box-three">
+						<h2>"The Works” Package</h2>
 					</div>
+					<h3 class="package-price">$3000.00</h3>
 					<figure>
-						<img src="https://www.shaylee-hansen.local/wp-content/uploads/2018/01/skier-two.jpg">
+						<img src="https://www.shayleehansen.com/wp-content/uploads/2018/01/skier-two.jpg">
 					</figure>
-					<button class="info-button">Click Here</button>
-					<ul class="site-setup">
+					<button class="info-button button-package-three">Click Here</button>
+					<ul class="site-setup site-setup-three">
+						<br>
+						<h4>Price: $3000</h4>
 						<br>
 						<h4>Site Setup</h4>
 						<br>
@@ -196,9 +197,9 @@ get_header(); ?>
 			</div>
 		</div>
 
-
+		<?php the_content(); ?>
 
 
 	</div>
-
-	<?php get_footer();
+<?php get_sidebar('politics'); ?>
+	<?php get_footer(); ?>

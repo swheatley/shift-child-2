@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                 /*                                                                                                                                           
+             /*
 Theme Name:		 Shift Child
 Theme URI:		 http://childtheme-generator.com/
 Description:	 Shift Child is a child theme of Shift, created by ChildTheme-Generator.com
@@ -8,260 +8,486 @@ Template:		 shift
 Version:		 1.0.0
 Text Domain:	 shift-child
 */
-                                                                                                                                                                                                                             /*  Add your custom styles here  */
-                                                                                                                                                                                                                             /*------------------------------ Sidebar / Widget CSS ------------------------------ */
+                 /*  Add your custom styles here  */
+                 /*------------------------------ Sidebar / Widget CSS ------------------------------ */
+                
+                 @media (min-width: 56.25em) {
+                     .sidebar-affiliate,
+                      .sidebar-tech-resources {
+                         width: 30.547%;
+                         float: right;
+                         margin: 1.5em 2.777% 3em 0;
+                     }
+                     .sidebar-primary #text-2>.widget-title,
+                     .sidebar-affiliate .widget-title {
+                         display: none;
+                     }
+                     .sidebar-political {
+                         display: flex;
+                         justify-content: space-around;
+                     }
+                     .sidebar-tech-resources{
+                       position: absolute;
+                       left: 65%;
+                       top: 5%;
+                     }
+                     .sidebar-political .widget {
+                         margin-top: 10em;
+                         width: 30%;
+                         border: none !important;
+                         background: whitesmoke !important;
+                         border-right: solid 3px #E6E6E6 !important;
+                         border-bottom: solid 3px #E6E6E6 !important;
+                         border-top: solid 2px #fcf9f9 !important;
+                         border-left: solid 2px #fcf9f9 !important;
+                         border-style: outset;
+                     }
+                     .sidebar-political .widget-title {
+                         /* display: none; */
+                         text-transform: uppercase;
+                     }
+                     .tribe-events-widget-link,
+                     .tribe-events-list-widget .tribe-list-widget {
+                         margin: 0 auto;
+                         padding: 5%;
+                     }
+                 }
 
-                                                                                                                                                                                                                             @media (min-width: 56.25em) {
-                                                                                                                                                                                                                                 .sidebar-affiliate,
-                                                                                                                                                                                                                                 .sidebar-political {
-                                                                                                                                                                                                                                     width: 30.547%;
-                                                                                                                                                                                                                                     float: right;
-                                                                                                                                                                                                                                     margin: 1.5em 2.777% 3em 0;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .sidebar-primary #text-2>.widget-title,
-                                                                                                                                                                                                                                 .sidebar-affiliate .widget-title {
-                                                                                                                                                                                                                                     display: none;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .sidebar-political .widget {
-                                                                                                                                                                                                                                     background: darkblue !important;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .sidebar-political .widget-title {
-                                                                                                                                                                                                                                     display: none;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .tribe-events-widget-link,
-                                                                                                                                                                                                                                 .tribe-events-list-widget .tribe-list-widget {
-                                                                                                                                                                                                                                     margin: 0 auto;
-                                                                                                                                                                                                                                     background: #fff !important;
-                                                                                                                                                                                                                                     padding: 5%;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 /*------------------------------ Menu Bar ------------------------------ */
-                                                                                                                                                                                                                                 .toggle-dropdown {
-                                                                                                                                                                                                                                     color: #fff;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .sub-menu li a {
-                                                                                                                                                                                                                                     color: #000;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 /*   --------------- Header--------------------------- */
-                                                                                                                                                                                                                                 div#menu-primary-container {
-                                                                                                                                                                                                                                     background: #1A1A1A;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .menu-primary a {
-                                                                                                                                                                                                                                     color: #fff;
-                                                                                                                                                                                                                                     font-weight: 700;
-                                                                                                                                                                                                                                     letter-spacing: 0.1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .page_item>a:link {
-                                                                                                                                                                                                                                     color: white;
-                                                                                                                                                                                                                                     text-decoration: none;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .page_item>a {
-                                                                                                                                                                                                                                     color: white;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .social-media-icons>li>a:link {
-                                                                                                                                                                                                                                     color: white;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 /* 
+
+                 /*--------------------- Mobile Menu -----------------------*/
+
+                 .open .menu-inner-container #menu-item-1795>a {
+                     color: #fff;
+                     background: #000;
+                 }
+                 /*------------------------------ Menu Bar ------------------------------ */
+
+                 .toggle-dropdown {
+                     color: #fff;
+                 }
+
+                 .sub-menu li a {
+                     color: #000;
+                 }
+                 /*   --------------- Header--------------------------- */
+
+                 div#menu-primary-container {
+                     background: #1A1A1A;
+                 }
+
+                 .menu-primary a {
+                     color: #fff;
+                     font-weight: 700;
+                     letter-spacing: 0.1em;
+                 }
+
+                 .page_item>a:link {
+                     color: white;
+                     text-decoration: none;
+                 }
+
+                 .page_item>a {
+                      color: white;
+                 }
+                .fa{
+                   color: #fff;
+                 }
+                 /*
       ------------------------------
-           Web Portfolio Page 
-      ------------------------------  
+           Web Portfolio Page
+      ------------------------------
     */
-                                                                                                                                                                                                                                 ul#menu-web-portfolio-menu {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     justify-content: space-around;
-                                                                                                                                                                                                                                     list-style-type: none;
-                                                                                                                                                                                                                                     width: 500px;
-                                                                                                                                                                                                                                     flex-wrap: wrap;
-                                                                                                                                                                                                                                     text-align: center;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 @media screen and ( max-width: 600px) {
-                                                                                                                                                                                                                                     ul#menu-web-portfolio-menu {
-                                                                                                                                                                                                                                         flex-direction: column;
-                                                                                                                                                                                                                                         max-width: 100%;
-                                                                                                                                                                                                                                         padding: 2em;
-                                                                                                                                                                                                                                         margin: auto;
-                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                     #menu-web-portfolio-menu>li.menu-item {
-                                                                                                                                                                                                                                         margin: 1em;
-                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 @media screen and ( min-width: 900px) {
-                                                                                                                                                                                                                                     ul#menu-web-portfolio-menu {
-                                                                                                                                                                                                                                         position: relative;
-                                                                                                                                                                                                                                         bottom: 5em;
-                                                                                                                                                                                                                                         left: 15em;
-                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 @media screen and ( min-width: 1220px) {
-                                                                                                                                                                                                                                     ul#menu-web-portfolio-menu {
-                                                                                                                                                                                                                                         left: 30em;
-                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #menu-item-1640 {
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     background: #ed549e
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #menu-item-1641 {
-                                                                                                                                                                                                                                     background: #2084c7;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #menu-item-1642 {
-                                                                                                                                                                                                                                     background: #ffcc35;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #menu-item-1640 a,
-                                                                                                                                                                                                                                 #menu-item-1641 a,
-                                                                                                                                                                                                                                 #menu-item-1642 a {
-                                                                                                                                                                                                                                     color: #fff;
-                                                                                                                                                                                                                                     text-decoration: none;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .su-heading-inner {
-                                                                                                                                                                                                                                     text-decoration: none;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #high-fitness-portfolio .su-tabs-nav span.su-tabs-current {
-                                                                                                                                                                                                                                     background: #ffcc35 !important;
-                                                                                                                                                                                                                                     color: #fff !important;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #high-fitness-portfolio .su-tabs-nav span {
-                                                                                                                                                                                                                                     background: #ed549e !important;
-                                                                                                                                                                                                                                     color: #fff !important;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #northstarlds-portfolio .su-tabs-nav span {
-                                                                                                                                                                                                                                     background: #004b81 !important;
-                                                                                                                                                                                                                                     color: #fff !important;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 #northstarlds-portfolio .su-tabs-nav span.su-tabs-current {
-                                                                                                                                                                                                                                     background: #2084c7 !important;
-                                                                                                                                                                                                                                     color: #fff !important;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 @media screen and ( max-width: 767px) {
-                                                                                                                                                                                                                                     .su-carousel {
-                                                                                                                                                                                                                                         display: none;
-                                                                                                                                                                                                                                     }
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .form-header {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     justify-content: space-between;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 /* ------------------------------ Candidate Website Package Page ------------------------------  */
-                                                                                                                                                                                                                                 .page-template-political-page .main {
-                                                                                                                                                                                                                                     width: 100%;
-                                                                                                                                                                                                                                     float: none;
-                                                                                                                                                                                                                                     font-family: 'Montserrat', sans-serif;
-                                                                                                                                                                                                                                     font-weight: 900;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .loop-container-political {
-                                                                                                                                                                                                                                     max-width: 1080px;
-                                                                                                                                                                                                                                     margin: 0 auto;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .political-header {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     flex-direction: column;
-                                                                                                                                                                                                                                     align-items: center;
-                                                                                                                                                                                                                                     padding-bottom: 5em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .political-header h2 {
-                                                                                                                                                                                                                                     text-transform: uppercase;
-                                                                                                                                                                                                                                     letter-spacing: 5px;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .candidate-packages h2 {
-                                                                                                                                                                                                                                     text-align: center;
-                                                                                                                                                                                                                                     font-size: 1.25em;
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     flex-direction: column;
-                                                                                                                                                                                                                                     margin: 0 auto;
-                                                                                                                                                                                                                                     text-transform: uppercase;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .political-header figure {
-                                                                                                                                                                                                                                     width: 200px;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 figure img {
-                                                                                                                                                                                                                                     width: 100%;
-                                                                                                                                                                                                                                     height: auto;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .candidate-packages {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     justify-content: space-between;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-one {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     flex-direction: column;
-                                                                                                                                                                                                                                     background: whitesmoke;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     margin: 1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-one .header-box {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     background: #0e0e91;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     color: whitesmoke;
-                                                                                                                                                                                                                                     border-style: outset;
-                                                                                                                                                                                                                                     border-right: solid 6px #060684;
-                                                                                                                                                                                                                                     border-bottom: solid 6px #060684;
-                                                                                                                                                                                                                                     border-top: solid 2px #060684;
-                                                                                                                                                                                                                                     border-left: solid 2px #060684;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-two {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     flex-direction: column;
-                                                                                                                                                                                                                                     background: whitesmoke;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     margin: 1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-two .header-box {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     background: #c90010;
-                                                                                                                                                                                                                                     border: solid 2px #e02635;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     color: whitesmoke;
-                                                                                                                                                                                                                                     border-style: outset;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-three {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     flex-direction: column;
-                                                                                                                                                                                                                                     background: whitesmoke;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     margin: 1em;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-three .header-box {
-                                                                                                                                                                                                                                     display: flex;
-                                                                                                                                                                                                                                     background: #0e0e91;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     color: whitesmoke;
-                                                                                                                                                                                                                                     border-style: outset;
-                                                                                                                                                                                                                                     border-right: solid 6px #060684;
-                                                                                                                                                                                                                                     border-bottom: solid 6px #060684;
-                                                                                                                                                                                                                                     border-top: solid 2px #060684;
-                                                                                                                                                                                                                                     border-left: solid 2px #060684;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .package-one:hover,
-                                                                                                                                                                                                                                 .package-two:hover,
-                                                                                                                                                                                                                                 .package-three:hover {
-                                                                                                                                                                                                                                     border-right: solid 3px #E6E6E6 !important;
-                                                                                                                                                                                                                                     border-bottom: solid 3px #E6E6E6 !important;
-                                                                                                                                                                                                                                     border-top: solid 2px #fcf9f9 !important;
-                                                                                                                                                                                                                                     border-left: solid 2px #fcf9f9 !important;
-                                                                                                                                                                                                                                     border-style: outset;
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .info-button {
-                                                                                                                                                                                                                                     background: #0e0e91;
-                                                                                                                                                                                                                                     padding: 1em;
-                                                                                                                                                                                                                                     color: whitesmoke;
-                                                                                                                                                                                                                                     border-style: outset;
-                                                                                                                                                                                                                                     border-right: solid 6px #060684;
-                                                                                                                                                                                                                                     border-bottom: solid 6px #060684;
-                                                                                                                                                                                                                                     border-top: solid 2px #060684;
-                                                                                                                                                                                                                                     border-left: solid 2px #060684;
-                                                                                                                                                                                                                                     text-transform: uppercase;
-                                                                                                                                                                                                                                     width: 150px;
-                                                                                                                                                                                                                                     border-radius: 0.5em;
-                                                                                                                                                                                                                                     text-align: center;
-                                                                                                                                                                                                                                     margin: 0 auto;
-                                                                                                                                                                                                                                     font-size: 0.8em;
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                 .site-setup {
-                                                                                                                                                                                                                                     /* display: none; */
-                                                                                                                                                                                                                                 }
-                                                                                                                                                                                                                                 .page-template-political-page li{
-                                                                                                                                                                                                                                     padding: 5px;
 
-                                                                                                                                                                                                                                 }
+                 ul#menu-web-portfolio-menu {
+                     display: flex;
+                     justify-content: space-around;
+                     list-style-type: none;
+                     width: 500px;
+                     flex-wrap: wrap;
+                     text-align: center;
+                 }
+
+                 @media screen and ( max-width: 600px) {
+                     ul#menu-web-portfolio-menu {
+                         flex-direction: column;
+                         max-width: 100%;
+                         padding: 2em;
+                         margin: auto;
+                     }
+                     #menu-web-portfolio-menu>li.menu-item {
+                         margin: 1em;
+                     }
+                 }
+
+                 @media screen and ( min-width: 900px) {
+                     ul#menu-web-portfolio-menu {
+                         position: relative;
+                         bottom: 5em;
+                         left: 15em;
+                     }
+                 }
+
+                 @media screen and ( min-width: 1220px) {
+                     ul#menu-web-portfolio-menu {
+                         left: 30em;
+                     }
+                 }
+
+                 #menu-item-1640 {
+                     padding: 1em;
+                     background: #ed549e
+                 }
+
+                 #menu-item-1641 {
+                     background: #2084c7;
+                     padding: 1em;
+                 }
+
+                 #menu-item-1642 {
+                     background: #ffcc35;
+                     padding: 1em;
+                 }
+
+                 #menu-item-1640 a,
+                 #menu-item-1641 a,
+                 #menu-item-1642 a {
+                     color: #fff;
+                     text-decoration: none;
+                 }
+
+                 .su-heading-inner {
+                     text-decoration: none;
+                 }
+
+                 #high-fitness-portfolio .su-tabs-nav span.su-tabs-current {
+                     background: #ffcc35 !important;
+                     color: #fff !important;
+                 }
+
+                 #high-fitness-portfolio .su-tabs-nav span {
+                     background: #ed549e !important;
+                     color: #fff !important;
+                 }
+
+                 #northstarlds-portfolio .su-tabs-nav span {
+                     background: #004b81 !important;
+                     color: #fff !important;
+                 }
+
+                 #northstarlds-portfolio .su-tabs-nav span.su-tabs-current {
+                     background: #2084c7 !important;
+                     color: #fff !important;
+                 }
+
+                 @media screen and ( max-width: 767px) {
+                     .su-carousel {
+                         display: none;
+                     }
+                 }
+
+                 .form-header {
+                     display: flex;
+                     justify-content: space-between;
+                 }
+                 /* ------------------------------ Candidate Website Package Page ------------------------------  */
+
+                 .page-template-political-page .main {
+                     width: 100%;
+                     float: none;
+                     font-family: 'Montserrat', sans-serif;
+                 }
+
+                 .loop-container-political {
+                     max-width: 1080px;
+                     margin: 0 auto;
+                 }
+
+                 .political-header {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     padding-bottom: 5em;
+                 }
+
+                 .political-header h2 {
+                     text-transform: uppercase;
+                     letter-spacing: 3px;
+                     font-weight: 600;
+                     text-shadow: 1px 1px white;
+                     margin-top: 1em;
+                 }
+
+                 .political-header figure {
+                     width: 200px;
+                     background: whitesmoke;
+                     border-radius: 50%;
+                     border: solid 2px whitesmoke!important;
+                     border-style: outset !important;
+                     border-right: solid 6px white !important;
+                     border-bottom: solid 6px white !important;
+                     border-top: solid 3px white !important;
+                     border-left: solid 3px white !important;
+                 }
+
+                 figure img {
+                     width: 100%;
+                     height: auto;
+                 }
+
+                 .candidate-packages h2 {
+                     font-size: 1.25em;
+                     font-weight: 800;
+                     display: flex;
+                     flex-direction: column;
+                     margin: 0 auto;
+                     text-align: center;
+                     text-transform: uppercase;
+                 }
+
+                 .candidate-packages {
+                     display: flex;
+                     justify-content: space-between;
+                 }
+
+                 .package-one {
+                     display: flex;
+                     flex-direction: column;
+                     background: whitesmoke;
+                     padding: 2em;
+                     margin: 1em;
+                 }
+
+                 .package-one .header-box {
+                     display: flex;
+                     background: #01016d;
+                     padding: 1em;
+                     color: whitesmoke;
+                     border-style: outset;
+                     border-right: solid 6px #0a0a66;
+                     border-bottom: solid 6px #0a0a66;
+                     border-top: solid 4px #0a0a66;
+                     border-left: solid 4px #0a0a66;
+                     text-shadow: 1px 1px black;
+                 }
+
+                 .header-box-one:hover+.package-price {
+                     cursor: pointer;
+                     display: block;
+                 }
+
+                 .header-box-two:hover+.package-price {
+                     cursor: pointer;
+                     display: block;
+                 }
+
+                 .header-box-three:hover+.package-price {
+                     cursor: pointer;
+                     display: block;
+                 }
+
+                 .package-price {
+                     display: none;
+                     padding: 1em;
+                     text-align: center;
+                     background: white;
+                     font-weight: 800;
+                 }
+
+                 .package-two {
+                     display: flex;
+                     flex-direction: column;
+                     background: whitesmoke;
+                     padding: 2em;
+                     margin: 1em;
+                 }
+
+                 .package-two .header-box {
+                     display: flex;
+                     background: #c90010;
+                     border: solid 2px #e02635;
+                     padding: 1em;
+                     color: whitesmoke;
+                     border-style: outset;
+                 }
+
+                 .package-three {
+                     display: flex;
+                     flex-direction: column;
+                     background: whitesmoke;
+                     padding: 2em;
+                     margin: 1em;
+                 }
+
+                 .package-three .header-box {
+                     display: flex;
+                     background: #01016d;
+                     padding: 1em;
+                     color: whitesmoke;
+                     border-style: outset;
+                     border-right: solid 6px #0a0a66;
+                     border-bottom: solid 6px #0a0a66;
+                     border-top: solid 4px #0a0a66;
+                     border-left: solid 4px #0a0a66;
+                     text-shadow: 1px 1px black;
+                 }
+
+                 .package-one:hover,
+                 .package-two:hover,
+                 .package-three:hover {
+                     border-right: solid 3px #E6E6E6 !important;
+                     border-bottom: solid 3px #E6E6E6 !important;
+                     border-top: solid 2px #fcf9f9 !important;
+                     border-left: solid 2px #fcf9f9 !important;
+                     border-style: outset;
+                     cursor: pointer;
+                 }
+
+                 .info-button {
+                     background: #01016d;
+                     padding: 1em;
+                     color: whitesmoke;
+                     border-radius: 0.5em;
+                     border-style: outset;
+                     border-right: solid 6px #0a0a66;
+                     border-bottom: solid 6px #0a0a66;
+                     border-top: solid 4px #0a0a66;
+                     border-left: solid 4px #0a0a66;
+                     text-transform: uppercase;
+                     width: 150px;
+                     text-align: center;
+                     margin: 0 auto;
+                     font-size: 0.85em;
+                     font-weight: bold;
+                     text-shadow: 1px 1px black;
+                     letter-spacing: 1.5px;
+                 }
+
+                 .info-button:hover {
+                     cursor: pointer;
+                     background: #fff;
+                     color: #01016d;
+                     font-weight: 800;
+                     text-shadow: none;
+                     letter-spacing: 1.5px;
+                 }
+
+                 .site-setup {
+                     display: none;
+                 }
+
+                 .page-template-political-page li {
+                     padding: 5px;
+                 }
+
+                 #sidebar {
+                     display: none;
+                 }
+
+                 .contact-section {
+                     margin-top: 10em;
+                     text-align: center;
+                     text-transform: uppercase;
+                     letter-spacing: 3px;
+                     font-weight: 600;
+                     text-shadow: 1px 1px white;
+                 }
+
+                 .contact-section h2 {
+                     padding: 3em;
+                     background: whitesmoke;
+                     border-right: solid 3px #E6E6E6 !important;
+                     border-bottom: solid 3px #E6E6E6 !important;
+                     border-top: solid 2px #fcf9f9 !important;
+                     border-left: solid 2px #fcf9f9 !important;
+                     border-style: outset;
+                 }
+
+                 #frm_form_2_container {
+                     margin-top: 10em;
+                     padding: 3em;
+                     background: whitesmoke;
+                     border-right: solid 3px #E6E6E6 !important;
+                     border-bottom: solid 3px #E6E6E6 !important;
+                     border-top: solid 2px #fcf9f9 !important;
+                     border-left: solid 2px #fcf9f9 !important;
+                     border-style: outset;
+                 }
+
+                 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]) {
+                     background: #fff !important;
+                 }
+
+                 .tribe-event-title {
+                   background: #01016d;
+                   text-transform: uppercase;
+                   font-family: 'Montserrat', sans-serif;
+                   font-weight: 800;
+                   padding: 1em;
+
+
+                 }
+                  .tribe-event-title a{
+                    color: #fff !important;
+                  }
+
+                 @media screen and (max-width: 767px) {
+                     .page-template-political-page .main {
+                         margin: 0 auto;
+                     }
+                     .political-header figure {
+                         margin-top: 3em;
+                     }
+                     .political-header h2 {
+                         margin-top: 2em;
+                         letter-spacing: 0px;
+                     }
+                     .candidate-packages {
+                         flex-direction: column;
+                         align-items: center;
+                     }
+                 }
+                 /*------------------------------ Tech Toolbox Page ------------------------------ */
+
+                .tech-toolbox-header{
+                  display: none;
+                }
+
+                 .tech-tool-box{
+                 display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 grid-auto-rows: repeat(3, 20em);
+                 grid-row-gap: 5em;
+                 grid-template-areas: "tech-books tech-books tech-books" "personal-books personal-books personal-books" "videos videos videos";
+             }
+             .tech-tool-box-books img {
+                 padding: 0.5em;
+             }
+             .tech-tool-box-books {
+                 grid-area: tech-books;
+
+             }
+             .personal-dev-book {
+                     grid-area: personal-books;
+
+
+             }
+             .personal-dev-book,
+             .tech-tool-box-books{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+
+             }
+             .personal-dev-book a {
+                   width: 210px;
+             }
+             .personal-dev-book img {
+                 padding: 0.5em;
+                 width: auto;
+             }
+
+             .youtube-videos {
+                 grid-area: videos;
+                 display: grid;
+                 grid-template-columns: 1fr;
+             }

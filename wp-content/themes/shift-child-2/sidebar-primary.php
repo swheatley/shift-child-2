@@ -12,7 +12,7 @@ if ( is_page_template( 'templates/regular-page.php' ))  {
 <?php endif;
 }
 
-if ( ! is_page_template( 'templates/political-page.php' ) ) {
+if ( is_page_template( 'templates/political-page.php' ) ) {
     if ( is_active_sidebar( 'politics' ) ) : ?>
     <aside class="sidebar sidebar-political" id="sidebar-political" role="complementary">
         <h1 class="screen-reader-text"><?php _e( 'Sidebar', 'shift'); ?></h1>
@@ -30,6 +30,16 @@ if ( is_single())  {
 <?php endif;
 }
 
+if(is_page_template('templates/tech-toolbox-page.php') ){
+  if ( is_active_sidebar( 'tech-resources' ) ) : ?>
+  <aside class="sidebar sidebar-tech-resources" id="sidebar-tech-resources" role="complementary">
+      <h1 class="screen-reader-text"><?php _e( 'Sidebar', 'shift'); ?></h1>
+      <?php dynamic_sidebar( 'tech-resources' ); ?>
+  </aside>
+<?php endif;
+
+}
+
 /*  ------ Front Page / Blog Page  ------ */
 if ( is_front_page())  {
    if ( is_active_sidebar( 'primary' ) ) : ?>
@@ -39,4 +49,3 @@ if ( is_front_page())  {
     </aside>
 <?php endif;
 }
-
