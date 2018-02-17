@@ -10,7 +10,7 @@ Text Domain:	 shift-child
 */
                  /*  Add your custom styles here  */
                  /*------------------------------ Sidebar / Widget CSS ------------------------------ */
-                
+
                  @media (min-width: 56.25em) {
                      .sidebar-affiliate,
                       .sidebar-tech-resources {
@@ -92,6 +92,29 @@ Text Domain:	 shift-child
                 .fa{
                    color: #fff;
                  }
+                 .social-media-icons{
+                   display: flex;
+                   flex-direction: row-reverse;
+                   justify-content: space-between;
+                 }
+                 .social-media-icons li{
+                   display: flex;
+                   padding: 5%;
+                   margin: 0 auto;
+
+                 }
+                 .social-media-icons li:nth-child(2){
+                   order: -1;
+                 }
+                 .social-media-icons li:nth-child(3){
+                   order: -2;
+                 }
+                 .social-media-icons li:hover {
+                  border: solid 2px white;
+                  border-radius: 5%;
+
+
+
                  /*
       ------------------------------
            Web Portfolio Page
